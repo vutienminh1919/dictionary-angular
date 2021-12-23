@@ -1,0 +1,14 @@
+<p>dictionary works!</p>
+<!--<input type="text" (change)="search($any($event.target).value)">-->
+<!--<p *ngIf="word">-->
+<!--  Nghia cua tu {{word.key}} la : {{word.meaning}}-->
+<!--</p>-->
+
+<ul>
+  <li *ngFor="let word of listWord">
+    <a [routerLink]="['/dictionary', word.key]">{{word.key}}</a>
+
+  </li>
+</ul>
+<router-outlet></router-outlet>
+
